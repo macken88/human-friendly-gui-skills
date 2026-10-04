@@ -8,6 +8,10 @@
 - [レビュースキル](.agents/skills/human-friendly-gui-review/SKILL.md): 既存画面や画面案の問題点、改善の方向性、優先度の評価
 - [HTMLモックの作り方](.agents/skills/human-friendly-gui-design/references/html-mockups.md)
 - [レビュー観点](.agents/skills/human-friendly-gui-review/references/review-checklist.md)
+- [テンプレートの選択基準](.agents/skills/human-friendly-gui-design/references/template-selection.md)
+- [ホーム・モード切替の判断基準](.agents/skills/human-friendly-gui-design/references/app-navigation.md)
+- [表示・操作・実行方式の判断基準](.agents/skills/human-friendly-gui-design/references/interaction-patterns.md)
+- [テンプレート一覧HTML](mockups/template-catalog.html): ナビゲーション2種類、作業画面8種類と取り込み設定付きの派生を開いて比較できます
 - [モックHTMLの配置先](mockups/)
 
 ## 利用方法
@@ -19,3 +23,5 @@
 他のリポジトリで使う場合は、必要なスキルのフォルダを `.agents/skills/` へ配置してください。各スキルは、同梱の参照資料だけで単独利用できます。設計側の自己検証とレビュー側の評価で使う `references/review-checklist.md` は同内容を同梱しています。共通観点を変更するときは両方を更新してください。
 
 `mockups/` は、このリポジトリで作るモックHTMLの保存先です。他のリポジトリでの出力先は利用者の指定や既存の文書配置を優先します。
+
+ホームは独立した作業の開始、サイドパネルは関連モード間の往復に使います。実行・ジョブ管理ではカード／表、逐次／並列、比較画面では同一画面／専用画面をモック上で切り替えて検討できます。本番の構成は作業と処理負荷に合わせて選び、モックの比較用スイッチをそのまま実装要件にしません。
